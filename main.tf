@@ -9,24 +9,23 @@ terraform {
 
 
 provider "thousandeyes" {
-  token = "53a2ac67-1b28-4118-b70b-0b85ec9472ec"
+  token = var.te_token
 }
 
 data "thousandeyes_agent" "ce_agent" {
-  # agent_name  = var.ce_agent_name
-  agent_name  = "thousandeyes-va"
+  agent_name  = var.ce_agent_name
 }
 
 
-resource "thousandeyes_agent_to_server" "agent_to_google_com" {
-  test_name = "agent_to_google.com"
-  interval = 120
-  server = "google.com"
-  agents {
-      agent_id = data.thousandeyes_agent.ce_agent.agent_id
-  }
+# resource "thousandeyes_agent_to_server" "agent_to_google_com" {
+  # test_name = "agent_to_google.com"
+  # interval = 120
+  # server = "google.com"
+  # agents {
+      # agent_id = data.thousandeyes_agent.ce_agent.agent_id
+  # }
 
-}
+# }
 
 
 resource "thousandeyes_http_server" "google_http_test" {
