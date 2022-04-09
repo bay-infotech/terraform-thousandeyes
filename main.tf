@@ -16,7 +16,7 @@ data "thousandeyes_agent" "ce_agent" {
 }
 
 resource "thousandeyes_agent_to_server" "server_test" {
-  name = "my agent test"
+  test_name = "my agent test"
   interval = 120
   server = "8.8.8.8"
   agents {
