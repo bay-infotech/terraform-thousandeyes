@@ -16,7 +16,7 @@ data "thousandeyes_agent" "ce_agent" {
 }
 
 
-resource "thousandeyes_agent_to_server" "agent_to_google.com" {
+resource "thousandeyes_agent_to_server" "agent_to_google_com" {
   test_name = "agent_to_google.com"
   interval = 120
   server = "google.com"
