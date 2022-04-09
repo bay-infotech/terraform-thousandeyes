@@ -1,32 +1,13 @@
-variable "bit_lab-appliance01" {
+variable "account_group_token" {
   type = string
   description = "name of thousandeyes agent" 
 }
 
-variable "apic_user" {
+variable "ce_agent_name" {
   type = string
-  description = "Username for apic"
+  description = "name of thousandeyes agent" 
 }
 
-variable "apic_pass" {
-  type = string
-  description = "The password for apic"
-}
 
-variable "vmm_dn" {
-  type = string
-  description = "vmm networking dn"
-  default = "uni/vmmp-VMware"
-}
 
-variable "phys_dom" {
-  type = string
-  description = "physical domain"
-  default = "uni/phys-phys"
-}
 
-variable "vmm_dvs" {
-  type = string
-  description = "distributed virtual switch"
-  
-}
