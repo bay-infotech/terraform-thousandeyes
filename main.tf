@@ -15,15 +15,17 @@ data "thousandeyes_agent" "ce_agent" {
   agent_name  = var.ce_agent_name
 }
 
-# resource "thousandeyes_agent_to_server" "agent_to_server" {
-  # test_name = var.ce_agent_name+""
-  # interval = 120
-  # server = "8.8.8.8"
-  # agents {
-      # agent_id = data.thousandeyes_agent.ce_agent.agent_id
-  # }
 
-# }
+resource "thousandeyes_agent_to_server" "server_test" {
+  name = "my agent test"
+  interval = 120
+  server = "8.8.8.8"
+  agents {
+      agent_id = data.thousandeyes_agent.ce_agent.agent_id
+  }
+
+}
+
 
 resource "thousandeyes_http_server" "google_http_test" {
   test_name = "google test"
