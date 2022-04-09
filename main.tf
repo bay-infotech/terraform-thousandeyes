@@ -28,15 +28,15 @@ data "thousandeyes_agent" "ce_agent" {
 # }
 
 
-resource "thousandeyes_http_server" "google_http_test" {
-  test_name = "google test"
-  interval = 120
-  url = "https://google.com"
-  agents {
-      agent_id = data.thousandeyes_agent.ce_agent.agent_id
-  }
-  agents {
+# resource "thousandeyes_http_server" "google_http_test" {
+  # test_name = "google test"
+  # interval = 120
+  # url = "https://google.com"
+  # agents {
+      # agent_id = data.thousandeyes_agent.ce_agent.agent_id
+  # }
+  # agents {
 
-      agent_id = 12345
-  }
-}
+      # agent_id = 12345
+  # }
+# }
