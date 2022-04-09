@@ -26,8 +26,6 @@ resource "thousandeyes_agent_to_server" "agent_to_google_com" {
 
 }
 
-
-
 resource "thousandeyes_http_server" "google_http_test" {
   test_name = "google test"
   interval = 120
