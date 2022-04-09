@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "thousandeyes" {
-  token = var.account_group_token
+  token = var.te_token
 }
 
 data "thousandeyes_agent" "ce_agent" {

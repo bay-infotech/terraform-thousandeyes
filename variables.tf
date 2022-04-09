@@ -1,6 +1,6 @@
-variable "account_group_token" {
+variable "te_token" {
   type = string
-  description = "name of thousandeyes agent" 
+  description = "token used for authentication" 
 }
 
 variable "ce_agent_name" {
