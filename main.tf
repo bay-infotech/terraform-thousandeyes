@@ -9,11 +9,12 @@ terraform {
 
 
 provider "thousandeyes" {
-  token = var.te_token
+  token = "53a2ac67-1b28-4118-b70b-0b85ec9472ec"
 }
 
 data "thousandeyes_agent" "ce_agent" {
-  agent_name  = var.ce_agent_name
+  # agent_name  = var.ce_agent_name
+  agent_name  = "thousandeyes-va"
 }
 
 
