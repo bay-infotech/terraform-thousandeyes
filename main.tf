@@ -16,10 +16,10 @@ data "thousandeyes_agent" "ce_agent" {
 }
 
 
-resource "thousandeyes_agent_to_server" "server_test" {
-  test_name = "my agent test"
+resource "thousandeyes_agent_to_server" "agent_to_google.com" {
+  test_name = "agent_to_google.com"
   interval = 120
-  server = "8.8.8.8"
+  server = "google.com"
   agents {
       agent_id = data.thousandeyes_agent.ce_agent.agent_id
   }
