@@ -10,7 +10,7 @@ provider "thousandeyes" {
   token = var.te_token
 }
 data "thousandeyes_agent" "ce_agent" {
-  name  = var.ce_agent_name
+  agent_name  = var.ce_agent_name
 }
 resource "thousandeyes_agent_to_server" "server_test" {
   test_name = "my agent test"
