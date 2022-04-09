@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    thousandeyes = {
+      source = "william20111/thousandeyes"
+      version = "0.6.0"
+    }
+  }
+}
+
+provider "thousandeyes" {
+  token = "de8bb13f-1c0d-4b1b-8f0c-0de6b6a29234"
+}
+
 data "thousandeyes_agent" "test_agent" {
   name  = "thousandeyes-va"
 }
