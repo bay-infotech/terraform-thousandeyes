@@ -16,7 +16,7 @@ data "thousandeyes_agent" "ce_agent" {
 }
 
 resource "thousandeyes_agent_to_server" "server_test" {
-  test_name = "my agent test"
+  name = "my agent test"
   interval = 120
   server = "8.8.8.8"
   agents {
@@ -27,7 +27,7 @@ resource "thousandeyes_agent_to_server" "server_test" {
 
 
 resource "thousandeyes_http_server" "google_http_test" {
-  name = "google test"
+  test_name = "google test"
   interval = 120
   url = "https://google.com"
   agents {
