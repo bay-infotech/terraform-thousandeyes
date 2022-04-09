@@ -14,7 +14,7 @@ provider "thousandeyes" {
 
 
 data "thousandeyes_agent" "ce_agent" {
-  name  = var.ce_agent_name
+  agent_name  = var.ce_agent_name
 
 }
 
