@@ -24,7 +24,7 @@ resource "thousandeyes_agent_to_server" "server_test" {
 
 data "thousandeyes_agent" "ce_agent" {
   agent_name  = var.ce_agent_name
-
+}
 resource "thousandeyes_http_server" "google_http_test" {
   test_name = "google test"
   interval = 120
