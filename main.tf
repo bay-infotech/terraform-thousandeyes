@@ -11,7 +11,7 @@ provider "thousandeyes" {
   token = "de8bb13f-1c0d-4b1b-8f0c-0de6b6a29234"
 }
 
-data "thousandeyes_agent" "test_agent" {
+data "thousandeyes_agent" "thousandeyes-va" {
   name  = "thousandeyes-va"
 }
 
