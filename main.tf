@@ -12,7 +12,7 @@ provider "thousandeyes" {
 }
 
 data "thousandeyes_agent" "thousandeyes-va" {
-  name  = "thousandeyes-va"
+  agent_name  = "thousandeyes-va"
 }
 
 resource "thousandeyes_agent_to_server" "thousandeyes-va" {
