@@ -14,7 +14,6 @@ data "thousandeyes_agent" "ce_agent" {
 }
 resource "thousandeyes_agent_to_server" "server_test" {
   test_name = "my agent test"
-  testtype="agent-to-server"
   interval = 120
   server = "8.8.8.8"
   agents {
