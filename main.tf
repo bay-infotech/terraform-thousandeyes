@@ -31,6 +31,6 @@ resource "thousandeyes_http_server" "google_http_test" {
       agent_id = data.thousandeyes_agent.ce_agent.agent_id
   }
   agents {
-      agent_id = 12345
+      agent_id = 4492
   }
 }
