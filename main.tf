@@ -15,7 +15,8 @@ data "thousandeyes_agent" "ce_agent" {
 resource "thousandeyes_agent_to_server" "server_test" {
   test_name = "my agent test"
   interval = 120
-  server = "8.8.8.8"
+  server = "www.google.com"
+  port = 80
   agents {
       agent_id = data.thousandeyes_agent.ce_agent.agent_id
   }
