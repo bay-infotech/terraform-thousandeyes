@@ -17,7 +17,7 @@ resource "thousandeyes_agent_to_server" "server_test" {
   interval = 120
   server = "8.8.8.8"
   agents {
-      agent_id = 4492
+      agent_id = data.thousandeyes_agent.ce_agent.agent_id
   }
 
 }
@@ -28,7 +28,7 @@ resource "thousandeyes_http_server" "google_http_test" {
   interval = 120
   url = "https://google.com"
   agents {
-      agent_id = 4492
+      agent_id = data.thousandeyes_agent.ce_agent.agent_id
   }
   agents {
       agent_id = 4492
