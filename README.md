@@ -1,4 +1,4 @@
-# thousandeyes deployment via Terraform
+# Automate Thousandeyes via Terraform
 # Terraform Provider for ThousandEyes [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/thousandeyes/terraform-provider-thousandeyes?label=release)](https://github.com/thousandeyes/terraform-provider-thousandeyes/releases) [![license](https://img.shields.io/github/license/thousandeyes/terraform-provider-thousandeyes.svg)]()
 
 The Terraform provider for ThousandEyes allows you to manage resources in [ThousandEyes](https://www.thousandeyes.com/).
@@ -6,7 +6,7 @@ The Terraform provider for ThousandEyes allows you to manage resources in [Thous
 ## Requirements
 
 - [Terraform](https://www.terraform.io/downloads.html) 0.12.x
-- [Go](https://golang.org/doc/install) 1.17 (to build the provider plugin)
+
 
 ## Usage
 The provider is on the Terraform registry. To use it, add the following code and run `terraform init`:
@@ -56,8 +56,7 @@ resource "thousandeyes_http_server" "www_thousandeyes_http_test" {
   }
 }
 ```
-
-### Supported tests
+Below test has been deployed
 - [X] agent-to-agent
 - [X] agent-to-server
 - [X] alert-rule
@@ -73,24 +72,3 @@ resource "thousandeyes_http_server" "www_thousandeyes_http_test" {
 - [X] voice (RTP stream)
 - [X] web-transactions
 
-## Building The Provider
-Clone repository to: `$GOPATH/src/github.com/thousandeyes/terraform-provider-thousandeyes`
-
-```sh
-$ git clone git@github.com:thousandeyes/terraform-provider-thousandeyes $GOPATH/src/github.com/thousandeyes/terraform-provider-thousandeyes
-```
-
-Enter the provider directory and build the provider:
-
-```sh
-$ cd $GOPATH/src/github.com/thousandeyes/terraform-provider-thousandeyes
-$ make build
-```
-
-Follow the instructions to [install it as a plugin](https://www.terraform.io/docs/plugins/basics.html#installing-a-plugin). After placing it into your plugins directory,  run `terraform init` to initialize it.
-
-## Maintainers
-This provider plugin is maintained by the ThousandEyes engineering team and accepts community contributions.
-
-## Acknowledgements
-ThousandEyes would like to thank William Fleming, John Dyer, and Joshua Blanchard for their contribution and community maintenance of this project.
