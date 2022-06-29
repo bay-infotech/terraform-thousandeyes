@@ -72,3 +72,14 @@ Below test has been deployed
 - [X] voice (RTP stream)
 - [X] web-transactions
 
+## BayInfotech Repositories
+
+Please visit our repositories for more detail and other projects in automation and programability:
+
+[https://github.com/bay-infotech](https://github.com/bay-infotech)
+
+
+## BayInfotech website
+We are working hard to bring more automation and programmability into community. Please contact us for more detail projects and solutions
+
+[https://bay-infotech.com](https://bay-infotech.com)
