@@ -6,6 +6,9 @@
 
 The Terraform provider for ThousandEyes allows you to manage resources in [ThousandEyes](https://www.thousandeyes.com/).
 
+## Note
+Due to some defects on the provider registry and also lack of supported functions, we just added two functions to show how this muodule works. We will add more function as soon as provider provides more modules.
+ 
 ## Requirements
 
 - [Terraform](https://www.terraform.io/downloads.html) 0.12.x
