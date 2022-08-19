@@ -2,8 +2,6 @@
 
 # Automate Thousandeyes via Terraform
 
-# Terraform Provider for ThousandEyes [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/thousandeyes/terraform-provider-thousandeyes?label=release)](https://github.com/thousandeyes/terraform-provider-thousandeyes/releases) [![license](https://img.shields.io/github/license/thousandeyes/terraform-provider-thousandeyes.svg)]()
-
 The Terraform provider for ThousandEyes allows you to manage resources in [ThousandEyes](https://www.thousandeyes.com/).
 
 ## Note
